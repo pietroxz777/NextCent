@@ -1,58 +1,124 @@
 @import url('./global.css');
 
-header {
+/* HEADER*/
+header{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 30px 0px;
-    background-color: var(--color-neutral-silver);
-
+    background-color: var(--Silver);  
 }
-
-.logo-header img {
+.logo-header img{
     width: 154px;
     height: 24px;
-
 }
-
-.nav-header ul {
+.nav-header ul{
     list-style: none;
-    display: flex   ;
+    display: flex;
     gap: 50px;
 }
-
-.nav-header ul li a {
-    color: var(--color-neutral-black);
-    font-weight: var(--font-body2-weight-regular);
+.nav-header ul li a{
+    color: var(--Black);
+    font-weight: var(--font-body2-height-regular);
+    transition: 0.3s;
 }
-
 .nav-header ul li a:hover{
-    color: var(--color-primary);
+    color: var(--Primary);
     text-decoration: underline;
 }
-
-.container-btn-header button {
+.container-btn-header button{
+    cursor: pointer;
     padding: 10px 20px;
     border-radius: 6px;
-    cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--color-primary-primary);
+    transition: 0.7s;
 }
 
-.container-btn-header .btn-login {
-    background-color: var(--color-neutral-silver);
-    
+.container-btn-header button:hover{
+     transform: scale(1.07);
 }
 
+.container-btn-header .btn-login{
+    background-color: var(--Silver);
+    border: 1px solid var(--D_grey);
+}
 .container-btn-header .btn-login a{
-    background-color: var(--color-primary-primary);
+    color: var(--Primary);
+}
+.container-btn-header .btn-sign-up a{
+    color: var(--White);
+}
+.container-btn-header .btn-sign-up{
+    background-color: var(--Primary);
+    color: var(--White);
+}
+/* FIM HEADER*/
+
+/*MAIN*/
+
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+    padding: 96px 0px;
+    background-color: var(--Silver);
 }
 
-.container-btn-header .btn-sign-up  {
-    background-color: var(--color-primary);
+.content-hero{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 657px;
     
 }
 
-.container-btn-header .btn-sign-up a {
-    color: var(--color-neutral-white);
+.content-hero h1{
+    font-size: var( --font-headline-1-size  );
 }
+
+.content-hero span{
+    color: var(--Primary);
+}
+
+/*FIM MAIN
+
+/* OUR CLIENTS */
+
+.our-clients {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    margin: 40px 0px;
+
+} 
+
+.our-clients {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    margin: 40px 0px;
+
+} 
+
+.content-our-clients{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.container-logo-clients{
+    display: flex;
+    gap: 136px;
+    padding: 25px 0px;
+    justify-content: center;
+    
+}
+
+/* FIM OUR CLIENTS
+
+
+
